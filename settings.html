@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Recruitab</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="overlay"></div>
+
+      <!-- Sidebar -->
+      <nav
+        class="navbar navbar-inverse fixed-top"
+        id="sidebar-wrapper"
+        role="navigation"
+      >
+        <ul class="nav sidebar-nav">
+          <div class="sidebar-header">
+            <div class="sidebar-brand">
+              <i class="fab fa-resolving text-white"> Recruitab</i>
+            </div>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="dropdown">
+            <a href="#dropdown" class="dropdown-toggle" data-toggle="dropdown"
+              >Drop Tab <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu animated fadeInLeft" role="menu">
+              <div class="dropdown-header">
+                Work Arena <i class="fab fa-android fa-1x"></i>
+              </div>
+              <li>
+                <a href="jobs.html"> <i class="fa fa-tasks"></i> Jobs</a>
+              </li>
+              <li>
+                <a href="details.html"
+                  ><i class="fas fa-angle-double-right"></i> Details</a
+                >
+              </li>
+              <li>
+                <a href="leads.html"> <i class="fas fa-wallet"></i> Salaries</a>
+              </li>
+              <div class="dropdown-header">
+                Edit Section <i class="fas fa-adjust"></i>
+              </div>
+
+              <li>
+                <a href="users.html"> <i class="fas fa-user"></i> Users</a>
+              </li>
+              <li>
+                <a href="profile.html">
+                  <i class="fas fa-user-circle"></i> Edit Profile</a
+                >
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="fas fa-wrench"></i> Settings</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="contact.html"> <i class="fas fa-pencil-alt"></i> Contact</a>
+          </li>
+          <li>
+            <a href="login.html"><i class="fab fa-staylinked"></i> Login</a></i>
+          </li>
+        </ul>
+      </nav>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <button
+          type="button"
+          class="hamburger animated fadeInLeft is-closed"
+          data-toggle="offcanvas"
+        >
+          <span class="hamb-top"></span>
+          <span class="hamb-middle"></span>
+          <span class="hamb-bottom"></span>
+        </button>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5">
+          <div class="container">
+            <i class="fab fa-resolving fa-2x text-white"> Recruitab</i>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav"></ul>
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                  >
+                    <i class="fas fa-user"></i> Welcome User
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="profile.html" class="dropdown-item">
+                      <i class="fas fa-user-circle"></i> Profile
+                    </a>
+                    <a href="settings.html" class="dropdown-item">
+                      <i class="fas fa-cog"></i> Settings
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" class="nav-link">
+                    <i class="fas fa-user-times"></i> Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    
+
+    <!-- ACTIONS -->
+    <section id="actions" class="py-3 mb-3 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-dark btn-block">
+              <i class="fas fa-arrow-left"></i>  Back To Dashboard
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-info btn-block">
+              <i class="fas fa-check"></i> Save Changes
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="settings">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h5>Edit Settings</h5>
+              </div>
+              <div class="card-body">
+                <form>
+                  <fieldset class="form-group">
+                    <legend>Allow User Registration</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          name="radio11"
+                          class="form-check-input"
+                          value="Yes"
+                          checked
+                        />
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          name="radio11"
+                          class="form-check-input"
+                          value="No"
+                        />
+                        No
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <legend>Homepage Format</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          name="radio1"
+                          class="form-check-input"
+                          value="posts"
+                          checked
+                        />
+                        User Page
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          type="radio"
+                          name="radio1"
+                          class="form-check-input"
+                          value="page"
+                        />
+                        Home Page
+                      </label>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy;
+              <span id="year"></span>
+              DataSight
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- ADD Campaign MODAL -->
+    <div class="modal fade" id="addCampaignsModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Add Campaign</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Lead</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <select class="form-control">
+                  <option value="">WebTek</option>
+                  <option value="">Textron</option>
+                  <option value="">BusinessPro</option>
+                  <option value="">Ebzee</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="image">Upload Image</label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="image" />
+                  <label for="image" class="custom-file-label"
+                    >Choose File</label
+                  >
+                </div>
+                <small class="form-text text-muted">Max Size 3mb</small>
+              </div>
+              <div class="form-group">
+                <label for="body">Body</label>
+                <textarea name="editor1" class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD LEAD MODAL -->
+    <div class="modal fade" id="addLeadModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Add Lead</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" data-dismiss="modal">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD USER MODAL -->
+    <div class="modal fade" id="addUserModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title">Add User</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      CKEDITOR.replace("editor1");
+    </script>
+  </body>
+</html>
